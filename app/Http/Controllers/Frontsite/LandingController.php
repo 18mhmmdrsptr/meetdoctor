@@ -22,16 +22,6 @@ use App\Models\MasterData\Specialist;
 class LandingController extends Controller
 {
     /**
-     * Create controller instance/
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-    
-    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -40,7 +30,7 @@ class LandingController extends Controller
     {
         return view('pages.frontsite.landing-page.index');
     }
-
+    
     /**
      * Show the form for creating a new resource.
      *
