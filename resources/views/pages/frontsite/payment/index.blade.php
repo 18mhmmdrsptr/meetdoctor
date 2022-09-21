@@ -193,7 +193,7 @@
                             <label
                                 class="flex flex-col justify-center items-center bg-white border-[#EDEDED] cursor-pointer focus:outline-none hover:bg-gray-50 peer-checked:ring-[#0D63F3] peer-checked:ring-2 peer-checked:border-transparent rounded-3xl border-2 p-7"
                                 for="visa">
-                                <img src="{{ asset('/assets/frontsiteimages/visa.png') }}"
+                                <img src="{{ asset('/assets/frontsite/images/visa.png') }}"
                                     class="max-h-[50px] inline-block" alt="Master card" />
                             </label>
                         </div>
