@@ -5,8 +5,9 @@
                 <div class="flex flex-auto justify-between">
 
                     <!-- Logo Brand -->
-                    <a href="{{ route ('index') }}" class="flex-shrink-0 flex items-center">
-                        <img class="h-12 lg:h-16 w-auto" src="{{ ('/assets/frontsite/images/logo.png') }}" alt="Meet Doctor Logo" />
+                    <a href="{{ route('index') }}" class="flex-shrink-0 flex items-center">
+                        <img class="h-12 lg:h-16 w-auto" src="{{ '/assets/frontsite/images/logo.png' }}"
+                            alt="Meet Doctor Logo" />
                     </a>
 
                     <!-- Navigation Menu -->
@@ -21,8 +22,8 @@
                     "text-[#1E2B4F] hover:text-gray-500 inline-flex
                     items-center px-1 pt-1 text-lg font-medium"
                -->
-                        <a href="{{ route ('index') }}"
-                            class="text-[#1E2B4F] relative after:absolute after:content-[''] after:border-b-2 after:border-[#0D63F5] after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex items-center px-1 text-lg">
+                        <a href="{{ route('index') }}"
+                            class="text-[#1E2B4F] relative {{ request()->is('/') ? "after:absolute after:content-[''] after:border-b-2 after:border-[#0D63F5] after:w-8/12 after:-translate-x-1/2 after:bottom-3 after:left-1/2 font-semibold inline-flex items-center px-1 text-lg" : 'hover:text-gray-500 inline-flex items-center px-1 pt-1 text-lg font-medium' }} ">
                             Home
                         </a>
                         <a href="#"
@@ -43,7 +44,7 @@
 
                 <!-- Button (no authenticated) -->
                 <div class="hidden lg:ml-10 lg:flex lg:items-center">
-                    <a href="{{ route ('login') }}"
+                    <a href="{{ route('login') }}"
                         class="inline-flex items-center rounded-full text-[#1E2B4F] text-lg font-medium bg-[#F2F6FE] px-10 py-3">
                         Sign In
                     </a>
@@ -104,7 +105,7 @@
 
             <!-- Profile (Mobile no authenticated) -->
             <div class="py-3 border-gray-200">
-                <a href="{{ route ('login') }}"
+                <a href="{{ route('login') }}"
                     class="flex items-center justify-center text-center mx-4 rounded-full text-[#1E2B4F] text-lg font-medium bg-[#F2F6FE] px-10 py-3">
                     Sign In
                 </a>
